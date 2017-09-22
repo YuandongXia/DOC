@@ -1,0 +1,3 @@
+在工程的C编译器选项里的预编译添加$TOOLKIT_DIR$\inc$TOOLKIT_DIR$\inc，编译
+（若不行在此增加重启IAR操作）
+然后删除$TOOLKIT_DIR$\inc$TOOLKIT_DIR$\inc，再编译即可

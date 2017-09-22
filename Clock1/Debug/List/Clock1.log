@@ -1,0 +1,152 @@
+Global:
+
+  Symbol          Redirected to
+  ------          -------------
+  _Printf         _PrintfSmall
+  _Scanf          _ScanfSmall
+  __as_NullEntry  __as_NullEntryStrict
+
+Auto library: shb_l.a -> C:\IAR7\arm\lib\shb_l.a
+Auto library: rt7M_tl.a -> C:\IAR7\arm\lib\rt7M_tl.a
+Auto library: m7M_tl.a -> C:\IAR7\arm\lib\m7M_tl.a
+Auto library: dl7M_tln.a -> C:\IAR7\arm\lib\dl7M_tln.a
+
+Library configuration:
+
+  extra init __iar_cstart_call_ctors
+  no_inline  __DebugBreak
+  no_inline  __iar_return_from_swi
+  no_inline  __iar_semihosting
+  no_inline  __iar_sh_stdout_swo
+
+  Module specific redirects:
+
+    unaligned access redirects:
+
+      Symbol            Redirected to
+      ------            -------------
+      __aeabi_memcpy    __iar_unaligned___aeabi_memcpy
+      __aeabi_memcpy4   __iar_unaligned___aeabi_memcpy4
+      __aeabi_memcpy8   __iar_unaligned___aeabi_memcpy8
+      __aeabi_memmove   __iar_unaligned___aeabi_memmove
+      __aeabi_memmove4  __iar_unaligned___aeabi_memmove4
+      __aeabi_memmove8  __iar_unaligned___aeabi_memmove8
+      memcmp            __iar_unaligned_memcmp
+      strcmp            __iar_unaligned_strcmp
+      strcpy            __iar_unaligned_strcpy
+      strncpy           __iar_unaligned_strncpy
+
+      C:\Users\yxd\Desktop\Clock1\configPkg\package\cfg\Clock1_prm3.orm3
+      DisplayDogm1286.orm3(display.arm3)
+      UARTCC26XX.orm3(drivers_cc13xxware.arm3)
+      rom_sysbios.obj(rom_sysbios.arm3)
+      ADCBuf.orm3(drivers_cc13xxware.arm3)
+      GPTimerCC26XX.orm3(drivers_cc13xxware.arm3)
+      LCDDogm1286.orm3(lcd.arm3)
+      UART.orm3(drivers_cc13xxware.arm3)
+      SPI.orm3(drivers_cc13xxware.arm3)
+
+
+Creating copy init batch C1 (Table) for P1 -> P3, auto, unit
+  First match: .data (Clock1_prm3.orm3 #109)
+Creating copy init batch C2 (Table) for P1 -> rw section .data_ti_sysbios_BIOS_Module__state__V, auto, unit
+  First match: .data_ti_sysbios_BIOS_Module__state__V (Clock1_prm3.orm3 #58)
+Creating copy init batch C3 (Table) for P1 -> rw section .data_ti_sysbios_family_arm_cc26xx_Timer_Module__state__V, auto, unit
+  First match: .data_ti_sysbios_family_arm_cc26xx_Timer_Module__state__V (Clock1_prm3.orm3 #110)
+Creating copy init batch C4 (Table) for P1 -> rw section .data_ti_sysbios_family_arm_cc26xx_TimestampProvider_Module__state__V, auto, unit
+  First match: .data_ti_sysbios_family_arm_cc26xx_TimestampProvider_Module__state__V (Clock1_prm3.orm3 #136)
+Creating copy init batch C5 (Table) for P1 -> rw section .data_ti_sysbios_family_arm_m3_Hwi_Module__state__V, auto, unit
+  First match: .data_ti_sysbios_family_arm_m3_Hwi_Module__state__V (Clock1_prm3.orm3 #163)
+Creating copy init batch C6 (Table) for P1 -> rw section .data_ti_sysbios_knl_Clock_Module__state__V, auto, unit
+  First match: .data_ti_sysbios_knl_Clock_Module__state__V (Clock1_prm3.orm3 #356)
+Creating copy init batch C7 (Table) for P1 -> rw section .data_ti_sysbios_knl_Swi_Module__state__V, auto, unit
+  First match: .data_ti_sysbios_knl_Swi_Module__state__V (Clock1_prm3.orm3 #531)
+Creating copy init batch C8 (Table) for P1 -> rw section .data_ti_sysbios_knl_Task_Module__state__V, auto, unit
+  First match: .data_ti_sysbios_knl_Task_Module__state__V (Clock1_prm3.orm3 #566)
+Creating copy init batch C9 (Table) for P1 -> rw section .data_xdc_runtime_Memory_Module__state__V, auto, unit
+  First match: .data_xdc_runtime_Memory_Module__state__V (Clock1_prm3.orm3 #810)
+Creating copy init batch C10 (Table) for P1 -> rw section .data_xdc_runtime_Startup_Module__state__V, auto, unit
+  First match: .data_xdc_runtime_Startup_Module__state__V (Clock1_prm3.orm3 #849)
+Creating copy init batch C11 (Table) for P1 -> rw section .data_xdc_runtime_System_Module__state__V, auto, unit
+  First match: .data_xdc_runtime_System_Module__state__V (Clock1_prm3.orm3 #926)
+Selecting packing algorithm for 'auto' batches
+  Estimating size for copy init batch C1 (P1 -> P3):
+      copy: 804 bytes
+      packbits [single range]: 428 bytes
+      lz77 [single range]: 225 bytes
+    Selecting lz77 [single range]
+  Estimating size for copy init batch C6 (P1 -> rw section .data_ti_sysbios_knl_Clock_Module__state__V):
+      copy: 44 bytes
+      packbits [single range]: 27 bytes
+      lz77 [single range]: 19 bytes
+    Selecting lz77 [single range]
+  Estimating size for copy init batch C4 (P1 -> rw section .data_ti_sysbios_family_arm_cc26xx_TimestampProvider_Module__state__V):
+      copy: 4 bytes
+      packbits [single range]: 2 bytes
+      lz77 [single range]: 3 bytes
+    Selecting packbits [single range]
+  Estimating size for copy init batch C10 (P1 -> rw section .data_xdc_runtime_Startup_Module__state__V):
+      copy: 8 bytes
+      packbits [single range]: 2 bytes
+      lz77 [single range]: 3 bytes
+    Selecting packbits [single range]
+  Estimating size for copy init batch C2 (P1 -> rw section .data_ti_sysbios_BIOS_Module__state__V):
+      copy: 36 bytes
+      packbits [single range]: 25 bytes
+      lz77 [single range]: 22 bytes
+    Selecting lz77 [single range]
+  Estimating size for copy init batch C7 (P1 -> rw section .data_ti_sysbios_knl_Swi_Module__state__V):
+      copy: 28 bytes
+      packbits [single range]: 11 bytes
+      lz77 [single range]: 12 bytes
+    Selecting packbits [single range]
+  Estimating size for copy init batch C8 (P1 -> rw section .data_ti_sysbios_knl_Task_Module__state__V):
+      copy: 68 bytes
+      packbits [single range]: 39 bytes
+      lz77 [single range]: 20 bytes
+    Selecting lz77 [single range]
+  Estimating size for copy init batch C9 (P1 -> rw section .data_xdc_runtime_Memory_Module__state__V):
+      copy: 4 bytes
+      packbits [single range]: 4 bytes
+      lz77 [single range]: 6 bytes
+    Selecting copy
+  Estimating size for copy init batch C11 (P1 -> rw section .data_xdc_runtime_System_Module__state__V):
+      copy: 8 bytes
+      packbits [single range]: 7 bytes
+      lz77 [single range]: 8 bytes
+    Selecting packbits [single range]
+  Estimating size for copy init batch C5 (P1 -> rw section .data_ti_sysbios_family_arm_m3_Hwi_Module__state__V):
+      copy: 52 bytes
+      packbits [single range]: 36 bytes
+      lz77 [single range]: 28 bytes
+    Selecting lz77 [single range]
+  Estimating size for copy init batch C3 (P1 -> rw section .data_ti_sysbios_family_arm_cc26xx_Timer_Module__state__V):
+      copy: 8 bytes
+      packbits [single range]: 7 bytes
+      lz77 [single range]: 9 bytes
+    Selecting packbits [single range]
+  Using "packbits [single range]" instead of "copy" everywhere reduces total estimated
+    overhead from 567 to 523
+  Using "lz77 [single range]" instead of "packbits [single range]" everywhere reduces total estimated
+    overhead from 523 to 475
+Creating initializer unit for P1 -> rw section .data_ti_sysbios_knl_Clock_Module__state__V
+Creating initializer unit for P1 -> rw section .data_ti_sysbios_family_arm_cc26xx_TimestampProvider_Module__state__V
+Creating initializer unit for P1 -> rw section .data_xdc_runtime_Startup_Module__state__V
+Creating initializer unit for P1 -> rw section .data_ti_sysbios_BIOS_Module__state__V
+Creating initializer unit for P1 -> rw section .data_ti_sysbios_knl_Swi_Module__state__V
+Creating initializer unit for P1 -> rw section .data_ti_sysbios_knl_Task_Module__state__V
+Creating initializer unit for P1 -> rw section .data_xdc_runtime_Memory_Module__state__V
+Creating initializer unit for P1 -> rw section .data_xdc_runtime_System_Module__state__V
+Creating initializer unit for P1 -> rw section .data_ti_sysbios_family_arm_m3_Hwi_Module__state__V
+Creating initializer unit for P1 -> rw section .data_ti_sysbios_family_arm_cc26xx_Timer_Module__state__V
+Creating initializer unit for P1 -> P3
+
+Veneer stats:
+
+  174 definitions
+  310 references
+      271 R_ARM_THM_CALL
+       39 R_ARM_THM_JUMP24
+   37 veneers               296 bytes
+       37 Thumb2 veneer         296 bytes
+   76 redirected references
